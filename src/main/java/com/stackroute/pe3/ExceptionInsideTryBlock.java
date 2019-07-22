@@ -3,21 +3,14 @@ package com.stackroute.pe3;
 import java.io.FileNotFoundException;
 
 public class ExceptionInsideTryBlock {
-
-        ExceptionInsideTryBlock(String msg) {
-            msg = "this is bound to execute";
-            System.out.println(msg);
-        }
-
-        public static void main(String[] args) throws Exception {
+    public String exceptionFound(int a,int b) throws Exception,ArithmeticException {
             try {
-                int a=10;
-                int b=0;
+
                 int c=a/b;
 
                 throw new ArithmeticException();
             } catch (ArithmeticException e) {
-                throw new Exception("exception thrown");
+                throw new ArithmeticException();
 
 
             }
@@ -26,6 +19,8 @@ public class ExceptionInsideTryBlock {
                 System.out.println("I am here to show finally block excuted");
             }
 
+
         }
+
     }
 

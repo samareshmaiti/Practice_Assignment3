@@ -46,7 +46,7 @@ public class VowelRemoveTest {
 
     }
     @Test
-    public void givenNullStringArrayShouldReturnErrorMessage() {
+    public void givenNullStringArrayShouldReturnNullMessage() {
         String[] country = null;
         String[] expected = null;
         String[] actualResult = this.vowelRemove.removeVowel(country);

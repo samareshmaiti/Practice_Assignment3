@@ -38,7 +38,7 @@ public class MatrixAdditionTest {
      */
 
     @Test
-    public void givenProperInputShouldReturnPositiveResult() {
+    public void givenInputShouldReturnAdditionResult() {
         int[][] expected = {{10,10,10}, {10, 10,10}};
         int a1[][] = {{1,2,3}, {4,5,6}};
         int a2[][] = {{9,8,7},{6,5,4}};
@@ -47,7 +47,7 @@ public class MatrixAdditionTest {
         assertArrayEquals(expected, actual);
     }
     @Test
-    public void givenImproperInputShouldReturnNegativeResult() {
+    public void givenImproperInputShouldReturnImproperResult() {
         int[][] expected = {{10,10,10}, {10, 10,10}};
         int a1[][] = {{1,2,3}, {4,5}};
         int a2[][] = {{9,8,7},{6,5}};
@@ -56,7 +56,7 @@ public class MatrixAdditionTest {
         assertArrayEquals(expected, actual);
     }
     @Test
-    public void givenEmptyInputShouldReturnError() {
+    public void givenEmptyInputShouldReturnNull() {
         int[][] expected = null;
         int a1[][] = null;
         int a2[][] = null;

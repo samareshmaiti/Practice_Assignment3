@@ -35,7 +35,7 @@ I   n the setup method ,object of class is declared
     error message
      */
     @Test
-    public void givenNegativeNumberOfStudentShouldReturnErrorMessage() {
+    public void givenInputShouldReturnNumberMustBePositive() {
         int[] grades={20,30,40,50};
         String actualresult = studentGrade.getGrades(-4,grades);
         assertEquals("no of student should not be less than zero", actualresult);
@@ -43,7 +43,7 @@ I   n the setup method ,object of class is declared
     /* this function will input 4 grades of students and should return successful message that value is in range
      */
     @Test
-    public void givenCorrectInputShouldReturnProperMessage() {
+    public void givenInputShouldReturnProperMessage() {
         int[] grades={10,20,30,40,50,60,70};
         String actualresult = studentGrade.getGrades(7,grades);
         assertEquals("datas are properly given", actualresult);
@@ -51,7 +51,7 @@ I   n the setup method ,object of class is declared
     /* this function will input 4 grades of students and should return error message that value should be in range
      */
     @Test
-    public void givenOutOfRangeInputShouldReturnError() {
+    public void givenInputShouldReturnOutOfRange() {
         int[] grades={100,130,40,-200,40,60,250};
         String actualresult = studentGrade.getGrades(7,grades);
         assertEquals("grades are out of range", actualresult);

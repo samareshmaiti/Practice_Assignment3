@@ -41,7 +41,7 @@ public class FirstAndLastDayOfWeekTest {
      */
 
     @Test
-    public void givenAProperDateShouldReturnFirstAndLastDateofWeek() throws Exception {
+    public void givenInputShouldReturnFirstAndLastDateofWeek() throws Exception {
         //act
         String actualResult = this.firstAndLastDayOfWeek.getDate("16/07/2019");
         //assert
@@ -52,7 +52,7 @@ public class FirstAndLastDayOfWeekTest {
 
     }
     @Test
-    public void givenWrongInputShouldReturnError() throws Exception {
+    public void givenInputShouldReturnEnterNonemptyInput() throws Exception {
         //act
         String actualResult = this.firstAndLastDayOfWeek.getDate("0/0/70");
         //assert

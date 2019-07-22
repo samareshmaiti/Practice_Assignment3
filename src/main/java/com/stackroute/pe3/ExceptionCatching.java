@@ -1,12 +1,9 @@
 package com.stackroute.pe3;
 
 public class ExceptionCatching {
-
-
-        public static void main(String args[]) {
-            int result = 10;
-            int arraySize = 3;
-            int negativeSize = -1;
+    public String catchException(int result,int arraySize,int negativeSize) throws
+                NullPointerException,NegativeArraySizeException,ArrayIndexOutOfBoundsException {
+           String result1="";
             int[] array = null;
 
             for(int i = 0; i<3 ; ++i)
@@ -24,21 +21,22 @@ public class ExceptionCatching {
                             break;
                     }
                 } catch(NullPointerException e) {
-                    System.out.println("Exception caught" +e);
+                   throw new NullPointerException();
 
 
                 } catch(NegativeArraySizeException e) {
-                    System.out.println("Exception caught" +e);
+                    throw new NegativeArraySizeException();
 
 
                 } catch(ArrayIndexOutOfBoundsException e) {
-                    System.out.println("Exception caught"+e);
+                    throw new ArrayIndexOutOfBoundsException();
 
 
                 }
             finally {
                     System.out.println("Catch block number \t" +i+ "\t is executed");
                 }
+           return null;
         }
     }
 

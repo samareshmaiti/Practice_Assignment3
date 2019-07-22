@@ -37,7 +37,7 @@ public class FileReadTest {
      test case will pass
      */
     @Test
-    public void givenInvalidFileShouldReturnError() throws IOException, FileNotFoundException {
+    public void givenInvalidFileShouldReturnWrongFile() throws IOException, FileNotFoundException {
         //act
         String fileLocation="/home/cgi/Desktop/tes.txt";
         String actualResult=this.fileRead.getFileContent(fileLocation);
