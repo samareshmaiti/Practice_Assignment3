@@ -34,7 +34,7 @@ public class ConsecutiveNumbersTest {
     /* this function will show output whether the given date is correct
      */
     @Test
-    public void checkNon() {
+    public void givenNonConsicutiveNumberShouldReturnNegativeResult() {
         //boolean expected = false;
 
         String  actualResult = consecutiveNumbers.getConcesutiveNumbers("98,96,95,94,93,92,90");
@@ -43,7 +43,7 @@ public class ConsecutiveNumbersTest {
     }
 
     @Test
-    public void checkConsOne() {
+    public void givenConsicutiveNumberShouldReturnPositiveResult() {
        // boolean expected = true;
        String actualResult = consecutiveNumbers.getConcesutiveNumbers("54,53,52,51,50,49,48");
 
@@ -51,7 +51,7 @@ public class ConsecutiveNumbersTest {
     }
 
     @Test
-    public void checknonConsTwo() {
+    public void givenAnotherNonConsicutiveNumberShouldReturnNegativeResult() {
         //boolean expected = false;
        String actualResult = consecutiveNumbers.getConcesutiveNumbers("1,2,3,4,5,6,6");
 
