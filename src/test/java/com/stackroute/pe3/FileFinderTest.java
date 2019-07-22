@@ -33,23 +33,21 @@ public class FileFinderTest {
     }
 
 
-    /* this function will check the file input if it is not valid then raise a message wrong file and then
-     test case will pass
+    /* this function will check the file input if it is  valid then return file name
      */
     @Test
-    public void givenValidInputFileShouldReturnPositiveOutput() throws  FileNotFoundException {
+    public void givenValidInputFileShouldReturnFileName() throws  FileNotFoundException {
         //act
         String fileLocation="/home/cgi/Desktop/";
         String actualResult=this.fileFinder.getFileName(fileLocation);
         //assert
         assertEquals("test.txt",actualResult);
     }
-   /* this function will check the file input if it is valid then read file content and sent it back if both the
-    data are same then match the file content.
+   /* this function will check the file input if it is valid then show file name
      */
 
     @Test
-    public void givenFileShouldReturnNameOfTextFile() throws FileNotFoundException {
+    public void givenInputShouldReturnNameOfTextFile() throws FileNotFoundException {
         //act
         String fileLocation="/home/cgi/Music/";
         String actualResult=this.fileFinder.getFileName(fileLocation);
@@ -59,12 +57,12 @@ public class FileFinderTest {
     }
 
     @Test
-    public void givenFileShouldReturnError() throws FileNotFoundException {
+    public void givenInputShouldReturnError() throws FileNotFoundException {
         //act
         String fileLocation="";
         String actualResult=this.fileFinder.getFileName(fileLocation);
         //assert
-        assertNotEquals("file empty",actualResult);
+        assertEquals("NullPointerException",actualResult);
     }
 
 }

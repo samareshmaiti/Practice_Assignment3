@@ -14,7 +14,7 @@ public class VowelRemove {
             }
             catch(NullPointerException e)
             {
-                return new String[]{"Exception Caught"};
+                return new String[]{"NullPointerException"};
             }
 
         //returns the resulting changed values

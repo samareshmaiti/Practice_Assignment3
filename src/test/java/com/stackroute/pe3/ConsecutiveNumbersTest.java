@@ -31,19 +31,19 @@ public class ConsecutiveNumbersTest {
         consecutiveNumbers= null;
     }
 
-    /* this function will show output whether the given date is correct
+    /* this function will return non concsicutive numbers
      */
     @Test
-    public void givenNonConsicutiveNumberShouldReturnNegativeResult() {
+    public void givenInputShouldReturnNonConsecutiveNumbers() {
         //boolean expected = false;
 
         String  actualResult = consecutiveNumbers.getConcesutiveNumbers("98,96,95,94,93,92,90");
 
         assertEquals("98,96,95,94,93,92,90 non consecutive numbers",actualResult);
     }
-
+//this function will return consecutive numbers
     @Test
-    public void givenConsicutiveNumberShouldReturnPositiveResult() {
+    public void givenInputNumberShouldReturnConsecutiveNumbers() {
        // boolean expected = true;
        String actualResult = consecutiveNumbers.getConcesutiveNumbers("54,53,52,51,50,49,48");
 
@@ -51,7 +51,7 @@ public class ConsecutiveNumbersTest {
     }
 
     @Test
-    public void givenAnotherNonConsicutiveNumberShouldReturnNegativeResult() {
+    public void givenNonConsecutiveNumbersInputShouldReturnNonConsecutiveNumbers() {
         //boolean expected = false;
        String actualResult = consecutiveNumbers.getConcesutiveNumbers("1,2,3,4,5,6,6");
 

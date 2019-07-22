@@ -59,12 +59,12 @@ public class FileReadTest {
     }
 
     @Test
-    public void givenFileShouldReturnError() throws IOException,FileNotFoundException {
+    public void givenFileShouldReturnErrorMessage() throws IOException,FileNotFoundException {
         //act
         String fileLocation="";
         String actualResult=this.fileRead.getFileContent(fileLocation);
         //assert
-        assertEquals("file empty",actualResult);
+        assertEquals("FileNotFoundException",actualResult);
     }
 
 
