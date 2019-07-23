@@ -49,14 +49,14 @@ public class ChessBoardTest {
     }
 
     @Test
-    public void givenInputShouldReturnErrorMessage() throws AssertionError {
-        String expected[][] = {{"WW", "BB", "WW", "BB", "WW", "BB", "WW", "BB"},
-                {"BB", "WW", "BB", "WW", "BB", "WW", "BB", "WW"},
-                {"WW", "BB", "WW", "BB", "WW", "BB", "WW", "BB"},
-                {"BB", "WW", "BB", "WW", "BB", "WW", "BB", "WW"},
-                {"WW", "BB", "WW", "BB", "WW", "BB", "WW", "BB"},
-                {"BB", "WW", "BB", "WW", "BB", "WW", "BB", "WW"},
-                {"WW", "BB", "WW", "BB", "WW", "BB", "WW", "BB"}};
+    public void givenInputShouldReturnRunMessage() throws AssertionError {
+        String expected[][] = {{"WW", "BB", "WW", "BB", "WW", "BB", "WW"},
+                {"BB", "WW", "BB", "WW", "BB", "WW", "BB"},
+                {"WW", "BB", "WW", "BB", "WW", "BB", "WW"},
+                {"BB", "WW", "BB", "WW", "BB", "WW", "BB"},
+                {"WW", "BB", "WW", "BB", "WW", "BB", "WW"},
+                {"BB", "WW", "BB", "WW", "BB", "WW", "BB"},
+                {"WW", "BB", "WW", "BB", "WW", "BB", "WW"}};
 
         String[][] actual = chessBoard.display(7, 7);
 
