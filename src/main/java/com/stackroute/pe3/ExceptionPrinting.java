@@ -1,6 +1,6 @@
 package com.stackroute.pe3;
 
-public class ExceptionCatching {
+public class ExceptionPrinting {
     public String catchException(int result,int arraySize,int negativeSize) throws
                 NullPointerException,NegativeArraySizeException,ArrayIndexOutOfBoundsException {
            String result1="";
