@@ -35,16 +35,15 @@ public class ChessBoardTest {
     }
 
     @Test
-    public void givenInputShouldReturnDifferedResult() throws AssertionError {
+    public void givenInputShouldReturnProperResult() throws AssertionError {
         String expected[][] = {{"WW", "BB", "WW", "BB", "WW", "BB", "WW", "BB"},
                 {"BB", "WW", "BB", "WW", "BB", "WW", "BB", "WW"},
                 {"WW", "BB", "WW", "BB", "WW", "BB", "WW", "BB"},
                 {"BB", "WW", "BB", "WW", "BB", "WW", "BB", "WW"},
                 {"WW", "BB", "WW", "BB", "WW", "BB", "WW", "BB"},
-                {"BB", "WW", "BB", "WW", "BB", "WW", "BB", "WW"},
-                {"WW", "BB", "WW", "BB", "WW", "BB", "WW", "ww"}};
+                {"BB", "WW", "BB", "WW", "BB", "WW", "BB", "WW"}};
 
-        String[][] actual = chessBoard.display(7, 8);
+        String[][] actual = chessBoard.display(6, 8);
 
         assertArrayEquals(expected, actual);
     }
@@ -57,7 +56,7 @@ public class ChessBoardTest {
                 {"BB", "WW", "BB", "WW", "BB", "WW", "BB", "WW"},
                 {"WW", "BB", "WW", "BB", "WW", "BB", "WW", "BB"},
                 {"BB", "WW", "BB", "WW", "BB", "WW", "BB", "WW"},
-                {"WW", "BB", "WW", "BB", "WW", "BB", "WW", "ww"}};
+                {"WW", "BB", "WW", "BB", "WW", "BB", "WW", "BB"}};
 
         String[][] actual = chessBoard.display(7, 7);
 
