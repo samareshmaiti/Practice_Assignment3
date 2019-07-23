@@ -3,7 +3,22 @@ package com.stackroute.pe3;
 import java.io.FileNotFoundException;
 
 public class ExceptionInsideTryBlock {
-    public String exceptionFound(int a,int b) throws Exception,ArithmeticException {
+    public ExceptionInsideTryBlock(String string) {
+        string="";
+        try
+        {
+            int length=string.length();
+            throw new NullPointerException();
+        }
+        catch(NullPointerException e)
+        {
+
+        }
+
+
+    }
+
+    public String exceptionFound(int a, int b) throws Exception,ArithmeticException {
             try {
 
                 int c=a/b;
